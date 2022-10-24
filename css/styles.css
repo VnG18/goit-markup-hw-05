@@ -178,6 +178,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--secondary-text-color);
+  fill: var(--secondary-text-color);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -306,6 +307,8 @@ body {
 }
 
 .hero-btn {
+  margin-top: 30px;
+  
   padding-top: 10px;
   padding-right: 32px;
   padding-bottom: 10px;
@@ -427,6 +430,8 @@ body {
 }
 
 .team-item {
+  background-color: #fff;
+  
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -523,7 +528,7 @@ body {
 
   fill: #afb1b8;
 
-  transition: border 2250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -614,7 +619,7 @@ body {
   height: 100%;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
-  fill: var(--fill-icon-color);
+  fill: #fff;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -683,6 +688,8 @@ body {
 }
 
 .samples-item {
+  display: block;
+ 
   margin-right: 30px;
   margin-bottom: 30px;
 
@@ -697,7 +704,7 @@ body {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.samples-item > img {
+.samples-link img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -726,8 +733,8 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.samples-item:hover .samples-overlay,
-.samples-item:focus .samples-overlay {
+.samples-link:hover .samples-overlay,
+.samples-link:focus .samples-overlay {
   transform: translateY(0);
 }
 
